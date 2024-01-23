@@ -1,0 +1,37 @@
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+
+.items-center{
+    align-items: center;
+}
+.hg{
+    height: 100%;
+
+
+}
+.wd{
+    width: 100%;
+}
+.gr{
+    color: #aaaaaa;
+}
+.flexc{
+    display: flex;
+    flex-direction: column;
+}
+.fontf{
+    font-family: sans-serif;
+}
+.lp{
+   padding-left: 37px; 
+}
+.ggp{
+    gap: 20px;
+}
+.fs{
+    font-size: 11px;
+}
