@@ -14,7 +14,7 @@ async function getSongs(){
      let songs =[]
     for (let index = 0; index < as.length; index++) {
         const element = as[index];
-        if (element.href.endsWith("m4a" || "mp3")) {
+        if (element.href.endsWith("m4a")) {
             songs.push(element.href.split("/Songs/")[1])
         }
 
