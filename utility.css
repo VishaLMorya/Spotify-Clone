@@ -18,6 +18,7 @@
 }
 .gr{
     color: #aaaaaa;
+
 }
 .flexc{
     display: flex;
@@ -27,11 +28,50 @@
     font-family: sans-serif;
 }
 .lp{
-   padding-left: 37px; 
+   padding-left: 30px; 
 }
 .ggp{
     gap: 20px;
 }
+.ggp1{
+    gap: 25px;
+}
 .fs{
     font-size: 11px;
 }
+.wh{
+    color: white;
+}
+.arrowh{
+    width: 17px;
+}
+.ggpt{
+    padding-top: 10px;
+}
+.navl{
+    font-size: 25px;
+    color: #626262;
+}
+.cc{
+    color: #171717;
+}
+.cp{
+    cursor: pointer;
+
+}
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #333; 
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #222; 
+  }
+  
+  
+
+

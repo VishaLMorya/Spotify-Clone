@@ -1,101 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="utility.css">
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moruya Player</title>
+  </head>
+  <link rel="icon" sizes="32x32" type="image/png" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="utility.css" />
+  <body>
     <div class="main flex justify-center items-center">
-        <div class="mainbox1 flex">
-            <div class="mainbox11 flex">
-                <div class="mainbox11-logo">
-                    <img src="Assests/Spotify-logo.svg" alt="">
-                </div>
-                <div class="mainbox11-home hg"> <ul>
-                    <li class="flex"><img src="Assests/home-logo.svg" alt="">Home</li>
-                    <li class="flex gr "><img src="Assests/search-logo.svg" alt="">Search</li>
-                </ul>
-            </div>
-                
-            </div>
-            <div class="mainbox12 flexc">
-               <div class="box121">
-                <div class="box1211 flex gr  items-center "><div class="lib gr flex justify-center items-center">
-
-                    <img  src="Assests/library-logo.svg" width="30px" alt="">
-                    Your Library
-                </div>
-                    <div class="boxplus">
-
-                        <img  src="Assests/plus-logo.svg"  alt="">
-                    </div>
-                </div>
-                <div class="box1212"></div>
-               </div>
-               <div class="box122 flexc">
-                <div>
-                    <ul class=" fs flex gr">
-                    <li>Legal</li>
-                    <li>Privacy Center</li>
-                    <li>Privacy Policy</li>
-                    <li> Cookies</li>
-                </ul>
-                </div>
-                <div class="fs ggp flex gr fontf lp">
-                    <span>About Ads</span>
-                    <span>Accessibility</span>
-
-                </div>
-                    <span class="gr fs fontf lp">Cookies</span>
-               </div>
-               <div class="box123"> <button class="flex justify-center items-center "><img src="Assests/button-logo.svg" alt=""> English</button></div>
-            </div>
+      <div class="mainbox1 flex">
+        <div class="mainbox1-1 flex">
+          <div class="mainbox1-1-logo">
+            <img src="Assests/Spotify-logo.svg" alt="" />
+          </div>
+          <div class="mainbox1-1-home hg">
+            <ul>
+              <li class="flex wh cp">
+                <img src="Assests/home-logo.svg" alt="" />Home
+              </li>
+              <li class="flex gr cp">
+                <img src="Assests/search-logo.svg" alt="" />Search
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="mainbox2">
-            <div class="box2nav flex justify-center items-center">
-                <div class="box2nav1">
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="box2nav2">Premium Support Download</div>
-                <div class="box2nav3">|</div>
-                <div class="box2nav4">Sign up</div>
-                <div class="box2nav5">Log in</div>
+        <div class="mainbox1-2 flexc">
+          <div class="box1-21">
+            <div class="box1-211 flex gr items-center">
+
+              <div class="lib gr flex justify-center items-center cp">
+                <img src="Assests/library-logo.svg" width="30px" alt="" />
+                Your Library
+              </div>
+              <div class="boxplus cp">
+                <img src="Assests/plus-logo.svg" alt="" />
+              </div>
+
             </div>
+
+              <div class="song-list wh lp fontf">
+                <ul>
+                   <li class="flex"><img src="Assests/music.svg" alt=""></li>
+                </ul>
+              </div>
+
+           
+          </div>
+          <div class="box1-22 flexc">
+            <div>
+              <ul class="lp fs flex gr">
+                <li class="cp">Legal</li>
+                <li class="cp">Privacy Center</li>
+                <li class="cp">Privacy Policy</li>
+                <li class="cp">Cookies</li>
+              </ul>
+            </div>
+            <div class="fs ggp flex gr fontf lp">
+              <span class="cp">About Ads</span>
+              <span class="cp">Accessibility</span>
+            </div>
+            <span class="gr fs fontf lp">Cookies</span>
+          </div>
+          <div class="box1-23 lp">
+            <button class="flex justify-center items-center cp">
+              <img src="Assests/button-logo.svg" alt="" /> English
+            </button>
+          </div>
         </div>
+      </div>
+      <div class="mainbox2">
+        <div class="box2nav flex items-center">
+          <div class="box2nav1 flex justify-center items-center">
+            <div class="arrowh cp">
+              <img src="Assests/left-arrow.svg" alt="" />
+            </div>
+            <div class="arrowh cp">
+              <img src="Assests/right-arrow.svg" alt="" />
+            </div>
+          </div>
+          <div class="ggpt flex justify-center items-center ggp1">
+            <div class="flex ggp box2nav2 gr fontf">
+              <div class="cp">Premium</div>
+              <div class="cp">Support</div>
+              <div class="cp">Download</div>
+            </div>
+            <div class="box2nav3 navl">|</div>
+            <div class="box2nav4 gr fontf cp">Sign up</div>
+            <div class="box2nav5 cp"><button class=" box2nav5-btn cp">Log in</button></div>
+          </div>
+        </div>
+        <div class="spotify-playlist">
+          <div class="spotify-nav flex items-center wh fontf">
+            <div class="nav-soft">Spotify Playlists</div>
+            <div class="gr fontf">Show all</div>
+          </div>
+
+          <div class="card-container cc flex">
+            <div class="card">
+              <div>
+             
+                <div class="circle-container flex justify-center items-center cp ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="svg-content cp" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                    <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" fill="#000000" stroke="#000000" stroke-width="1.5" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <img class="cp" src="Assests/lofi beats.jpg" alt="" /></div>
+              <div>
+                <h2 class="wh cp">Lofi beats</h2>
+                <p class="gr cp">
+                  chill beats, lofi vibes, new tracks every week...
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="playbar flex justify-center items-center wh">
+            <div class="song-info">
+
+            </div>
+
+            <div class="song-btn  flex justify-center items-center">
+              <img class="wh" src="Assests/previous.svg" alt="">
+              <img src="Assests/play.svg" alt="">
+              <img src="Assests/next.svg" alt="">
+            </div>
+
+            <div class="song-time"></div>
+
+          </div>
+        </div>
+        
+        
+        
+      </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

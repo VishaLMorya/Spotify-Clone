@@ -12,48 +12,48 @@ body{
     gap: 10px;
 }
 .mainbox1{
-    height: 125vh;
+    height: 105vh;
     width: 29vw;
     flex-direction: column;
     gap: 10px;
     
 }
-.mainbox11{
+.mainbox1-1{
     height: 27vh;
     width: 26vw;
     background-color: #121212;
     flex-direction: column;
     gap: 5px;
-    padding: 30px 1px 1px 30px;
+    padding: 20px 1px 1px 25px;
 }
-.mainbox11-logo{
+.mainbox1-1-logo{
     height: 30px;
 }
-.mainbox11-home ul {
+.mainbox1-1-home ul {
     display: flex;
     margin-top: 12px;
     gap: 18px;
     flex-direction: column;
 }
-.mainbox11-home ul li{
+.mainbox1-1-home ul li{
     list-style: none;
     gap: 15px;
     font-weight: 700;
     font-family: sans-serif;
     font-size: 16px;
 }
-.mainbox11-home ul li img{
-    height: 5vh;
+.mainbox1-1-home ul li img{
+    height: 4vh;
 }
-.mainbox12{
+.mainbox1-2{
     height: 90vh;
     width: 29vw;
     background-color: #121212;
 }
-.box121{
+.box1-21{
     padding-top: 1px;
 }
-.box1211{
+.box1-211{
     font-family: sans-serif;
     height: 60px;
     max-width: 40vw;
@@ -61,7 +61,7 @@ body{
     top: 0;
 }
 .lib{
-    margin-left: 32px;
+    margin-left: 25px;
     padding-bottom: 10px;
     gap: 11px;
 }
@@ -70,39 +70,162 @@ body{
     width: 16px;
     margin-right: 18px;
 }
-.box1212{
-    height: 15vh;
-}
-.box122{
+.box1-22{
     height: 35%;
     gap: 20px;
 }
-.box122 ul{
+.box1-22 ul{
     font-family: sans-serif;
     font-weight: 700;
     gap: 20px;
-    padding-left: 37px;
     padding-top: 40px;
 }
-.box122 ul li{
+.box1-22 ul li{
     list-style: none;
 }
-.box123 button{
+.box1-23 button{
     border-radius: 20px;
     background-color: black;
     color: white;
     border: 0.5px solid white;
-    margin-left: 40px;
     width: 7vw;
     height: 6vh;
     font-weight: 700;
 }
-.box123 img{
+.box1-23 img{
     width: 15px;
 }
 .mainbox2{
-    height: 125vh;
+    position: relative;
+    height: 105vh;
+    max-height: 105vh;
+    overflow: scroll;
     width: 100%;
-    background-color: rgb(187, 255, 0);
+    background-color: #121212;
     
+}
+.box2nav{
+    justify-content: space-between;
+    height: 15vh;
+ 
+}   
+.box2nav1{
+    gap: 20px;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.box2nav4:hover{
+    color: white;
+    font-size: 18px;
+}
+.box2nav5{
+    padding-right: 30px;
+}
+.box2nav5 button{
+    border-radius: 50px;
+    height: 50px;
+    width: 110px;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: white;
+}
+.box2nav5-btn:hover{
+    font-weight: bold;
+    width:115px ;
+    height:55px ;
+}
+.spotify-playlist{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #1d1d1d;
+}
+.box2nav2{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.spotify-nav{
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50px;
+}
+
+.nav-soft{
+    font-size: 20px;
+    font-weight: 900;
+}
+.card-container{
+    height: 70vh;
+    margin: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+.card{
+    margin: 16px;
+    width: 13vw;
+    height: 50vh;
+    position: relative;
+    background-color: #2f2f2f8c;
+    max-height: 50vh;
+}
+.card img{
+   
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    object-fit: contain;
+}
+.card h2{
+    font-size: 15px;
+    padding-left: 10px;
+}
+.card p{
+    font-size: 12px;
+    padding-left: 10px;
+    font-family: sans-serif;
+}
+
+
+.circle-container {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #1fdf64;
+    right: 0;
+    margin-top: 110px;
+    opacity: 0;
+    transition: all 1s ease-out;
+    
+    }
+
+.svg-content {
+    width: 70%;
+  }
+
+.playbar{
+    position:fixed;
+    background-color: white;
+    width: 90%;
+    height: 10vh;
+    bottom: 0;
+}
+.song-btn{
+    gap: 20px;
+
+}
+.song-list{
+    height: 30vh;
+    width: 25vw;
+    max-height: 30vh;
+    overflow-y: scroll;
+}
+.song-list ul li {
+    list-style-type: decimal;
+
 }
