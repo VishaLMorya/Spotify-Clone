@@ -17,6 +17,9 @@ async function getSongs(){
         if (element.href.endsWith("m4a")) {
             songs.push(element.href.split("/Songs/")[1])
         }
+        else if (element.href.endsWith("mp3")) {
+            songs.push(element.href.split("/Songs/")[1])
+        }
 
     }
     return songs
