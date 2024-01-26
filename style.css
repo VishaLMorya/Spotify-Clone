@@ -55,7 +55,7 @@ body{
 }
 .box1-211{
     font-family: sans-serif;
-    height: 60px;
+    height: 45px;
     max-width: 40vw;
     justify-content: space-between;
     top: 0;
@@ -71,14 +71,14 @@ body{
     margin-right: 18px;
 }
 .box1-22{
-    height: 35%;
-    gap: 20px;
+    height: 66px;
+    gap: 10px;
 }
 .box1-22 ul{
     font-family: sans-serif;
     font-weight: 700;
     gap: 20px;
-    padding-top: 40px;
+    padding-top: 22px;
 }
 .box1-22 ul li{
     list-style: none;
@@ -210,22 +210,53 @@ body{
 
 .playbar{
     position:fixed;
-    background-color: white;
-    width: 90%;
+    width: 68vw;
     height: 10vh;
-    bottom: 0;
+    bottom: 10px;
+    margin-left: 10px;
+    border-radius: 40px;
 }
 .song-btn{
     gap: 20px;
-
+    padding-bottom: 13px;
 }
 .song-list{
-    height: 30vh;
-    width: 25vw;
-    max-height: 30vh;
+    height: 50vh;
+    width: 27vw;
+    max-height: 50vh;
     overflow-y: scroll;
+    padding-left: 17px;
 }
 .song-list ul li {
     list-style-type: decimal;
+    gap: 10px;
+    padding: 12px 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin : 5px 5px;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.info{
+    width: 224px;
+}
 
+.seekbar{
+    height: 4px;
+    width: 60vw;
+    background-color:  black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 13px;
+}
+
+.circlebar{
+    height: 11px;
+    width: 11px;
+    border-radius: 100px;
+    background-color: white;
+    position: absolute;
+    bottom: -2.5px;
+    left: -2px;
+    transition: left 0.5s;
 }
