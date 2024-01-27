@@ -173,7 +173,7 @@ body{
     width: 13vw;
     height: 32vh;
     position: relative;
-    background-color: #2f2f2f8c;
+    background-color: #52525299;
     max-height: 50vh;
 }
 .card img{
@@ -406,12 +406,19 @@ body{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        row-gap: 25px;
      }
     .card{
-        width: 45vw;
-        height: 35vh;
+        width: 92vw;
+        height: 51vh;
+        margin: 0;
+        max-height: 70vh;
     }
+    .card img{
+        padding-left: 19px;
+        padding-top: 19px;
 
+    }
     .card h2{
         font-size: 35px;
     }
@@ -419,10 +426,25 @@ body{
         font-size: 20px;
     }
 
+    .playbar{
+        height: 17vh;
+        margin-bottom: 8vh;
+    }
 
-
-
-
-
+    .abovebar{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .song-info{
+        width: auto;
+    }
+    .song-btn{
+        margin-right: 0;
+        padding-top: 10px;
+    }
+    .song-time{
+        width: auto;
+        padding-bottom: 10px;
+    }
 
 }
