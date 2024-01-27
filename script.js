@@ -1,6 +1,19 @@
 
 let currentSong = new Audio();
 
+function secondsToMinuteSeconds(seconds){
+  if (isNaN(seconds) || seconds < 0){
+    return "Invalid input";
+  }
+
+  const minutes = Math.floor(seconds / 60);
+  const remainingSeconds = Math.floor(seconds % 60);
+  const formattedMinutes = String(minutes).padStart(2, '0');
+  const formattedSeconds = String(remainingSeconds).padStart(2, '0');
+  return `${formattedMinutes}:${formattedSeconds}`
+
+}
+
 async function getSongs() {
   let a = await fetch("http://127.0.0.1:3000/spotify-clone/Songs/");
 
@@ -21,11 +34,14 @@ async function getSongs() {
   return songs;
 }
 
-const playMusic =(track)=>{
+const playMusic =(track, pause=false)=>{
     currentSong.src = "/Spotify-Clone/songs/" + track
-    currentSong.play()
-    play.src = "Assests/pause.svg"
-    document.querySelector(".song-info").innerHTML = "track"
+    if(!pause){
+      currentSong.play()
+      play.src = "Assests/pause.svg"
+
+    }
+    document.querySelector(".song-info").innerHTML = decodeURI(track)
     document.querySelector(".song-time").innerHTML = "00:00/00:00"
 }
 
@@ -36,6 +52,8 @@ async function main() {
     
 
   let songs = await getSongs();
+
+  playMusic(songs[0], true)
 
   let songul = document
     .querySelector(".song-list")
@@ -78,11 +96,27 @@ play.addEventListener("click", ()=>{
 
 })
 
+currentSong.addEventListener("timeupdate", ()=>{
+  
+  document.querySelector(".song-time").innerHTML =`${secondsToMinuteSeconds(currentSong.currentTime)}/${secondsToMinuteSeconds(currentSong.duration)}`
 
+  document.querySelector(".circlebar").style.left = (currentSong.currentTime/ currentSong.duration) * 100 +"%"
 
+})
 
+document.querySelector(".seekbar").addEventListener("click", e=>{
+  let percent = (e.offsetX/e.target.getBoundingClientRect().width) * 100
+ document.querySelector(".circlebar").style.left = percent + "%";
+ currentSong.currentTime = ((currentSong.duration)* percent) / 100
+})
 
+document.querySelector(".menu").addEventListener("click", ()=>{
+  document.querySelector(".mainbox1").style.left = "0"
+})
 
+document.querySelector(".close").addEventListener("click", ()=>{
+  document.querySelector(".mainbox1").style.left = "-100%"
+})
 
 }
 
