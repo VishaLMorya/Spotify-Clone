@@ -132,7 +132,9 @@ next.addEventListener("click", ()=>{
   }
 })
 
-
+document.querySelector(".volrange").addEventListener("change", (e)=>{
+ currentSong.volume = parseInt(e.target.value)/100
+})
 
 
 

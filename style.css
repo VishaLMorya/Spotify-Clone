@@ -1,3 +1,9 @@
+:root{
+    --a:0;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -175,6 +181,14 @@ body{
     position: relative;
     background-color: #52525299;
     max-height: 50vh;
+    transition: all 0.5s;
+}
+
+.card:hover{
+    background-color: black;
+    --a:1;
+        
+    
 }
 .card img{
    
@@ -202,7 +216,7 @@ body{
     background-color: #1fdf64;
     right: 0;
     margin-top: 110px;
-    opacity: 0;
+    opacity: var(--a);
     transition: all 1s ease-out;
     
     }
@@ -287,6 +301,14 @@ body{
     padding-left: 9px;
     display: none;
 }
+.volume{
+    height: 3.5vh;
+    padding-right: 8px;
+}
+.volrange{
+    width: 4vw;
+}
+
 
 @media (max-width: 1100px) {
     
@@ -311,9 +333,7 @@ body{
     .abovebar{
         width: 85vw;
     }
-    .box2nav{
-        justify-content: center;
-    }
+   
     .ggpt{
         overflow-y: scroll;
 
@@ -328,7 +348,8 @@ body{
         justify-content: space-around;
     }
    .mainbox1-1-home{
-    padding-left: 20vw;
+    padding-left: 5vw;
+    padding-top: 4vh;
    }
     .close{
     display: block;
@@ -343,6 +364,7 @@ body{
     .mainbox1-2{
         justify-content: center;
         align-items: center;
+        margin-bottom: 76px;
     }
 
     .card-container{
@@ -360,11 +382,42 @@ body{
         font-size: 20px;
     }
 
+    .box1-23 button{
+        width: 100px;
+        height: 5vh;
+    }
+    .box2nav{
+        height: 9vh;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .spotify{
+        height: 5vh;
+        width: 18vw;
+    }
 
+    .mainbox1-1-home ul{
+        gap: 37px;
+    }
+    .box1-211{
+        max-width: 50vw;
+        width: 38vw;
+        /* padding-bottom: 20px; */
+        height: 60px;
+    }
+    .song-list{
+        width:35vw;
+    }
 
+    .song-list ul li{
+        height: 4vh;
+        align-items: center;
+    }
 
+    .volrange{
+        width: 7vw;
 
-
+    }
 
 
 }
@@ -391,11 +444,12 @@ body{
         align-items: center;
     }
     .box1-211{
-        width: 90vw;
+        width: 98vw;
         max-width: 100%;
     }
     .song-list{
-        width: 80vw;
+        width: 86vw;
+        padding-left: 0;
     }
 
     .box1-23 button{
@@ -446,5 +500,13 @@ body{
         width: auto;
         padding-bottom: 10px;
     }
+    .info div{
+        word-break: break-all;
+    }
+    .volrange{
+        width: 15vw;
+    }
+
+
 
 }
